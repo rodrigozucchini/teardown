@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEARDOWN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bar">
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="es">ES</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <h1 class="title" role="img" aria-label="TEARDOWN">
+      <span>T</span><span>E</span><span>A</span><span>R</span><span>D</span><span>O</span><span>W</span><span>N</span>
+    </h1>
+
+    <div class="intro">
+      <p class="intro-label">[ 00 ] <span data-i18n="introLabel"></span></p>
+      <p class="intro-lead" data-i18n="introLead"></p>
+      <p data-i18n="introBody"></p>
+    </div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label class="prompt">
+        <span aria-hidden="true">&gt;</span>
+        <input id="search" type="search" autocomplete="off">
+      </label>
+      <div id="tags" class="tags"></div>
+    </div>
+
+    <p id="count" class="count"></p>
+    <ol id="list" class="list"></ol>
+  </main>
+
+  <footer data-i18n="footer"></footer>
+
+  <script src="topics.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
